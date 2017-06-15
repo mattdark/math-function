@@ -35,6 +35,7 @@ def graph(string, x_range):
     plt.plot(x, y)
     plt.savefig('graph.png', bbox_inches='tight')
     plt.show()
+    plt.gcf().clear()
 
 formula = input('Function: ')
 lower_limit = eval(input("Lower limit: "))
